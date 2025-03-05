@@ -1,4 +1,4 @@
-import error404 from "../image/error404.jpg";
+import error404 from "/image/error404.jpg";
 
 function NotFound() {
   return (
