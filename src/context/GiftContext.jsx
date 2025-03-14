@@ -11,8 +11,12 @@ export function GiftProvider({ children }) {
     navigate("/list");
   };
 
+  const removeGift = (id) => {
+    setGifts(gifts.filter((gift) => gift.id !== id));
+  };
+
   return (
-    <GiftContext.Provider value={{ gifts, addGift }}>
+    <GiftContext.Provider value={{ gifts, addGift, removeGift }}>
       {children}
     </GiftContext.Provider>
   );

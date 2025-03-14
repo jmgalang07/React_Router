@@ -16,8 +16,12 @@ function Details() {
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       <h2>Detalles del Regalo</h2>
-      <p><strong>Para:</strong> {gift.name}</p>
-      <p><strong>Descripción:</strong> {gift.description}</p>
+      <p>
+        <strong>Para:</strong> {gift.name}
+      </p>
+      <p>
+        <strong>Descripción:</strong> {gift.description}
+      </p>
       <button onClick={() => navigate("/list")}>Back</button>
     </div>
   );
